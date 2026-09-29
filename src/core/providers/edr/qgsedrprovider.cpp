@@ -14,6 +14,7 @@
 
 #include "qgsedrprovider.h"
 
+#include "qgsedrdataitems.h"
 #include "qgsedrdataset.h"
 #include "qgserror.h"
 #include "qgsfeatureiterator.h"
@@ -192,4 +193,9 @@ QString QgsEdrProviderMetadata::relativeToAbsoluteUri( const QString &uri, const
 QList<Qgis::LayerType> QgsEdrProviderMetadata::supportedLayerTypes() const
 {
   return { Qgis::LayerType::Vector };
+}
+
+QList<QgsDataItemProvider *> QgsEdrProviderMetadata::dataItemProviders() const
+{
+  return { new QgsEdrDataItemProvider };
 }

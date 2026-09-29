@@ -17,6 +17,7 @@
 
 #include "qgsproviderguiregistry.h"
 
+#include "providers/edr/qgsedrguiprovider.h"
 #include "qgsgdalguiprovider.h"
 #include "qgslogger.h"
 #include "qgsmaplayerconfigwidgetfactory.h"
@@ -85,6 +86,9 @@ QgsProviderGuiRegistry::QgsProviderGuiRegistry( const QString &pluginPath )
 
 void QgsProviderGuiRegistry::loadStaticProviders()
 {
+  QgsProviderGuiMetadata *edr = new QgsEdrProviderGuiMetadata();
+  mProviders[edr->key()] = edr;
+
   // Register static providers
   QgsProviderGuiMetadata *gdal = new QgsGdalGuiProviderMetadata();
   mProviders[gdal->key()] = gdal;

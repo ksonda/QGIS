@@ -1,0 +1,108 @@
+{
+  "type": "Coverage",
+  "id": "VerticalProfile",
+  "domain": {
+    "type": "Domain",
+    "domainType": "VerticalProfile",
+    "axes": {
+      "x": {
+        "values": [
+          -75
+        ]
+      },
+      "y": {
+        "values": [
+          40
+        ]
+      },
+      "z": {
+        "values": [
+          1000,
+          850,
+          500
+        ]
+      },
+      "t": {
+        "values": [
+          "2026-01-01T00:00:00Z"
+        ]
+      }
+    },
+    "referencing": [
+      {
+        "coordinates": [
+          "x",
+          "y"
+        ],
+        "system": {
+          "type": "GeographicCRS",
+          "id": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+        }
+      },
+      {
+        "coordinates": [
+          "t"
+        ],
+        "system": {
+          "type": "TemporalRS",
+          "calendar": "Gregorian"
+        }
+      },
+      {
+        "coordinates": [
+          "z"
+        ],
+        "system": {
+          "type": "VerticalCRS",
+          "cs": {
+            "csAxes": [
+              {
+                "direction": "down",
+                "unit": {
+                  "symbol": "hPa"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "parameters": {
+    "temperature": {
+      "type": "Parameter",
+      "description": {
+        "en": "Synthetic temperature"
+      },
+      "unit": {
+        "symbol": {
+          "value": "K",
+          "type": "http://www.opengis.net/def/uom/UCUM/"
+        }
+      },
+      "observedProperty": {
+        "id": "urn:test:temperature",
+        "label": {
+          "en": "Temperature"
+        }
+      }
+    }
+  },
+  "ranges": {
+    "temperature": {
+      "type": "NdArray",
+      "dataType": "float",
+      "axisNames": [
+        "z"
+      ],
+      "shape": [
+        3
+      ],
+      "values": [
+        0.0,
+        1.0,
+        2.0
+      ]
+    }
+  }
+}

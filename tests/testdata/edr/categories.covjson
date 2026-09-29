@@ -1,0 +1,114 @@
+{
+  "type": "Coverage",
+  "id": "PointSeries",
+  "domain": {
+    "type": "Domain",
+    "domainType": "PointSeries",
+    "axes": {
+      "x": {
+        "values": [
+          -75
+        ]
+      },
+      "y": {
+        "values": [
+          40
+        ]
+      },
+      "t": {
+        "values": [
+          "2026-01-01T00:00:00Z",
+          "2026-01-01T01:00:00Z"
+        ]
+      }
+    },
+    "referencing": [
+      {
+        "coordinates": [
+          "x",
+          "y"
+        ],
+        "system": {
+          "type": "GeographicCRS",
+          "id": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+        }
+      },
+      {
+        "coordinates": [
+          "t"
+        ],
+        "system": {
+          "type": "TemporalRS",
+          "calendar": "Gregorian"
+        }
+      },
+      {
+        "coordinates": [
+          "z"
+        ],
+        "system": {
+          "type": "VerticalCRS",
+          "cs": {
+            "csAxes": [
+              {
+                "direction": "down",
+                "unit": {
+                  "symbol": "hPa"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "parameters": {
+    "temperature": {
+      "type": "Parameter",
+      "observedProperty": {
+        "label": {
+          "en": "Sky"
+        },
+        "categories": [
+          {
+            "id": "clear",
+            "label": {
+              "en": "Clear sky"
+            }
+          },
+          {
+            "id": "cloud",
+            "label": {
+              "en": "Cloudy"
+            }
+          }
+        ]
+      },
+      "categoryEncoding": {
+        "clear": [
+          0
+        ],
+        "cloud": [
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "ranges": {
+    "temperature": {
+      "type": "NdArray",
+      "dataType": "integer",
+      "axisNames": [
+        "t"
+      ],
+      "shape": [
+        2
+      ],
+      "values": [
+        0,
+        2
+      ]
+    }
+  }
+}

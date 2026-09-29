@@ -1,0 +1,28 @@
+{
+  "type": "Coverage",
+  "id": "Grid",
+  "domain": "linked/domain.json",
+  "parameters": {
+    "temperature": {
+      "type": "Parameter",
+      "description": {
+        "en": "Synthetic temperature"
+      },
+      "unit": {
+        "symbol": {
+          "value": "K",
+          "type": "http://www.opengis.net/def/uom/UCUM/"
+        }
+      },
+      "observedProperty": {
+        "id": "urn:test:temperature",
+        "label": {
+          "en": "Temperature"
+        }
+      }
+    }
+  },
+  "ranges": {
+    "temperature": "linked/ranges/temp.json"
+  }
+}

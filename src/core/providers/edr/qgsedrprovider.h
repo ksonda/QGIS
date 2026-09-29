@@ -76,7 +76,7 @@ class QgsEdrProviderMetadata final : public QgsProviderMetadata
 
   public:
     QgsEdrProviderMetadata();
-
+    QList<QgsDataItemProvider *> dataItemProviders() const override;
     QgsEdrProvider *createProvider( const QString &uri, const QgsDataProvider::ProviderOptions &options, Qgis::DataProviderReadFlags flags = {} ) override;
     QVariantMap decodeUri( const QString &uri ) const override;
     QString encodeUri( const QVariantMap &parts ) const override;

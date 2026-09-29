@@ -369,6 +369,7 @@ set(QGIS_CORE_SRCS
   providers/edr/qgsedrrasterdata.cpp
   providers/edr/qgsedrquery.cpp
   providers/edr/qgsedrrasterprovider.cpp
+  providers/edr/qgsedrdataitems.cpp
   providers/sensorthings/qgssensorthingsconnection.cpp
   providers/sensorthings/qgssensorthingsdataitems.cpp
   providers/sensorthings/qgssensorthingsfeatureiterator.cpp
@@ -2038,6 +2039,7 @@ set(QGIS_CORE_HDRS
   providers/edr/qgsedrrasterdata.h
   providers/edr/qgsedrquery.h
   providers/edr/qgsedrrasterprovider.h
+  providers/edr/qgsedrdataitems.h
   providers/sensorthings/qgssensorthingsconnection.h
   providers/sensorthings/qgssensorthingsdataitems.h
   providers/sensorthings/qgssensorthingsfeatureiterator.h

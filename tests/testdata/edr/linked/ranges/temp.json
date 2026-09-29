@@ -1,0 +1,21 @@
+{
+  "type": "TiledNdArray",
+  "dataType": "float",
+  "axisNames": [
+    "y",
+    "x"
+  ],
+  "shape": [
+    2,
+    3
+  ],
+  "tileSets": [
+    {
+      "tileShape": [
+        1,
+        2
+      ],
+      "urlTemplate": "tiles/{y}-{x}.json"
+    }
+  ]
+}

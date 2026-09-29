@@ -69,6 +69,7 @@ set(TESTS
  testqgsdistancearea.cpp
  testqgsdxfexport.cpp
  testqgselevationmap.cpp
+ testqgsedrcoveragejson.cpp
  testqgsellipsemarker.cpp
  testqgsexpression.cpp
  testqgsexpressioncontext.cpp

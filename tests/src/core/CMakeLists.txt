@@ -70,6 +70,8 @@ set(TESTS
  testqgsdxfexport.cpp
  testqgselevationmap.cpp
  testqgsedrcoveragejson.cpp
+ testqgsedrquery.cpp
+ testqgsedrclient.cpp
  testqgsellipsemarker.cpp
  testqgsexpression.cpp
  testqgsexpressioncontext.cpp

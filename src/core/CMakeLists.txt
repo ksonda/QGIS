@@ -361,8 +361,10 @@ set(QGIS_CORE_SRCS
   providers/ogr/qgsogrproviderconnection.cpp
   providers/ogr/qgsogrtransaction.cpp
 
+  providers/edr/qgsedrclient.cpp
   providers/edr/qgsedrcoveragejson.cpp
   providers/edr/qgsedrtypes.cpp
+  providers/edr/qgsedrquery.cpp
   providers/sensorthings/qgssensorthingsconnection.cpp
   providers/sensorthings/qgssensorthingsdataitems.cpp
   providers/sensorthings/qgssensorthingsfeatureiterator.cpp
@@ -2024,8 +2026,10 @@ set(QGIS_CORE_HDRS
   providers/ogr/qgsogrproviderutils.h
   providers/ogr/qgsogrtransaction.h
 
+  providers/edr/qgsedrclient.h
   providers/edr/qgsedrcoveragejson.h
   providers/edr/qgsedrtypes.h
+  providers/edr/qgsedrquery.h
   providers/sensorthings/qgssensorthingsconnection.h
   providers/sensorthings/qgssensorthingsdataitems.h
   providers/sensorthings/qgssensorthingsfeatureiterator.h

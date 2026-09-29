@@ -74,6 +74,8 @@ set(TESTS
  testqgsedrclient.cpp
  testqgsedrfeatures.cpp
  testqgsedrprovider.cpp
+ testqgsedrrasterdata.cpp
+ testqgsedrrasterprovider.cpp
  testqgsellipsemarker.cpp
  testqgsexpression.cpp
  testqgsexpressioncontext.cpp

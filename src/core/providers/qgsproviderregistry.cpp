@@ -18,6 +18,7 @@
 
 #include "qgsproviderregistry.h"
 
+#include "providers/edr/qgsedrprovider.h"
 #include "providers/gdal/qgsgdalprovider.h"
 #include "providers/memory/qgsmemoryprovider.h"
 #include "providers/meshmemory/qgsmeshmemorydataprovider.h"
@@ -182,6 +183,11 @@ class PdalUnusableUriHandlerInterface : public QgsProviderRegistry::UnusableUriH
 void QgsProviderRegistry::init()
 {
   // add static providers
+  {
+    const QgsScopedRuntimeProfile profile( QObject::tr( "Create OGC EDR providers" ) );
+    QgsProviderMetadata *edr = new QgsEdrProviderMetadata();
+    mProviders[edr->key()] = edr;
+  }
   {
     const QgsScopedRuntimeProfile profile( QObject::tr( "Create memory layer provider" ) );
     mProviders[QgsMemoryProvider::providerKey()] = new QgsMemoryProviderMetadata();

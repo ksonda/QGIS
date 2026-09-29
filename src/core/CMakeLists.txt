@@ -363,6 +363,8 @@ set(QGIS_CORE_SRCS
 
   providers/edr/qgsedrclient.cpp
   providers/edr/qgsedrcoveragejson.cpp
+  providers/edr/qgsedrdataset.cpp
+  providers/edr/qgsedrprovider.cpp
   providers/edr/qgsedrtypes.cpp
   providers/edr/qgsedrquery.cpp
   providers/sensorthings/qgssensorthingsconnection.cpp
@@ -2028,6 +2030,8 @@ set(QGIS_CORE_HDRS
 
   providers/edr/qgsedrclient.h
   providers/edr/qgsedrcoveragejson.h
+  providers/edr/qgsedrdataset.h
+  providers/edr/qgsedrprovider.h
   providers/edr/qgsedrtypes.h
   providers/edr/qgsedrquery.h
   providers/sensorthings/qgssensorthingsconnection.h

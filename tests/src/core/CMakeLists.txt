@@ -72,6 +72,8 @@ set(TESTS
  testqgsedrcoveragejson.cpp
  testqgsedrquery.cpp
  testqgsedrclient.cpp
+ testqgsedrfeatures.cpp
+ testqgsedrprovider.cpp
  testqgsellipsemarker.cpp
  testqgsexpression.cpp
  testqgsexpressioncontext.cpp

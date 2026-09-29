@@ -19,6 +19,7 @@
 #include "qgsproviderregistry.h"
 
 #include "providers/edr/qgsedrprovider.h"
+#include "providers/edr/qgsedrrasterprovider.h"
 #include "providers/gdal/qgsgdalprovider.h"
 #include "providers/memory/qgsmemoryprovider.h"
 #include "providers/meshmemory/qgsmeshmemorydataprovider.h"
@@ -187,6 +188,8 @@ void QgsProviderRegistry::init()
     const QgsScopedRuntimeProfile profile( QObject::tr( "Create OGC EDR providers" ) );
     QgsProviderMetadata *edr = new QgsEdrProviderMetadata();
     mProviders[edr->key()] = edr;
+    QgsProviderMetadata *edrRaster = new QgsEdrRasterProviderMetadata();
+    mProviders[edrRaster->key()] = edrRaster;
   }
   {
     const QgsScopedRuntimeProfile profile( QObject::tr( "Create memory layer provider" ) );

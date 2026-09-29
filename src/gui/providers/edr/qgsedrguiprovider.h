@@ -26,7 +26,7 @@ class GUI_EXPORT QgsEdrProviderGuiMetadata final : public QgsProviderGuiMetadata
 {
   public:
     QgsEdrProviderGuiMetadata();
-
+    void registerGui( QMainWindow *window ) override;
     QList<QgsSourceSelectProvider *> sourceSelectProviders() override;
 };
 

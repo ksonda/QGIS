@@ -17,6 +17,7 @@
 #include "qgsabstractdatasourcewidget.h"
 #include "qgsapplication.h"
 #include "qgsauthconfigselect.h"
+#include "qgsedrchart.h"
 #include "qgsedrclient.h"
 #include "qgsproviderguimetadata.h"
 #include "qgssettings.h"
@@ -484,3 +485,8 @@ QList<QgsSourceSelectProvider *> QgsEdrProviderGuiMetadata::sourceSelectProvider
 }
 
 #include "qgsedrguiprovider.moc"
+
+void QgsEdrProviderGuiMetadata::registerGui( QMainWindow *window )
+{
+  qgsEdrInstallChartPanel( window );
+}

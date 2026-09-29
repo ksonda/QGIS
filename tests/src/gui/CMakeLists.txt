@@ -21,6 +21,7 @@ endif()
 #ADD_QGIS_TEST(histogramtest testqgsrasterhistogram.cpp)
 
 add_qgis_test(testqgsedrsourceselect.cpp MODULE gui LINKEDLIBRARIES qgis_gui)
+add_qgis_test(testqgsedrchart.cpp MODULE gui LINKEDLIBRARIES qgis_gui)
 
 set(TESTS
   testqgsadvanceddigitizingdockwidget.cpp
